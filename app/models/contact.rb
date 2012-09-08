@@ -1,7 +1,7 @@
 class Contact
   include ActiveModel::Validations
   include ActiveModel::Conversion
-  
+
   attr_accessor :name, :email, :message
 
   EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i

@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
-gem 'mysql2', '0.2.6'
+gem 'pg'
 gem 'haml'
 gem 'paperclip', '~> 2.3'
 gem 'devise'
@@ -17,7 +17,7 @@ group :test do
 end
 
 # Gem needed for image upload with Heroku and AWS
-gem 'aws-s3', :require => 'aws/s3' 
+gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

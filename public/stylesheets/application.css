@@ -13,7 +13,7 @@
 body {
   font-family: Calibri, "Helvetica Neue", Helvetica, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #333333;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #f4f4f4;
 }
 
@@ -25,12 +25,15 @@ h1, h2, h3 {
   clear: both;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   color: #FF3366;
 }
 h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #666666;
+}
+hgroup {
+  margin-bottom: 2em;
 }
 hgroup h1 {
   margin-bottom: 0;
@@ -81,14 +84,17 @@ dt {
 
 /* captions */
 figure img {
-  border: 1px solid #eaeaea;
+  padding: 5px;
+  border: 1px solid #dedede;
+  background-color: #fff;
 }
 figcaption {
   display: block;
   clear: both;
-  font-weight: bold;
   color: #666;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  padding-left: 6px;
+  font-style: italic;
 }
 
 /* quotes */
@@ -223,18 +229,17 @@ form input.btn {
 /* layout */
 header,
 section {
-  padding: 2% 0 2% 2%;
+  padding: 3.4% 0 4% 4%;
   float: left;
 }
 header {
-  width: 20%;
+  width: 22%;
 }
 section {
-  width: 74%;
+  width: 70%;
 }
 section.main {
   background: url(../images/bg.png) left top repeat-y #f7f7f7;
-  padding-right: 2%;
 }
 section section {
   padding: 0;
@@ -242,10 +247,14 @@ section section {
 footer.main {
   border-top: 1px solid #ececec;
   clear: both;
-  padding: 1em 1em 1em 24%;
+  padding: 1em 1em 1em 30%;
   font-size: 0.8em;
   color: #666666;
   background-color: #efefef;
+}
+footer.main p {
+  margin-bottom: 0;
+  max-width: none;
 }
 .authentication {
   position: absolute;
@@ -309,19 +318,24 @@ body.projects-index img {
 /* Section-specific styles *******************************************************************************************************************/
 
 /* Project-list */
+body.projects-index .main-heading {
+  margin-bottom: 1.6em;
+}
 body.projects-index article {
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 2.5em 1em 0;
+  width: 20%;
 }
 body.projects-index article h1 {
   font-size: 1em;
   color: inherit;
-  width: 182px;
+  height: 2em;
 }
 body.projects-index img {
   padding: 1px;
-  background-color: #fff;
-  border: 5px solid #ddd;
+  border: 5px solid #dedede;
+  width: 100%;
+  margin-bottom: 0.5em;
 }
 body.projects-index a:hover img {
   border-color: #149FCC;
@@ -399,15 +413,23 @@ body.pages-about .testimonials footer .position {
     background: none;
   }
 }
+@media screen and (max-width: 1175px) {
+  body.projects-index article {
+    width: 18%;
+  }
+}
 @media screen and (max-width: 900px) {
   header,
   section.main,
   footer.main {
-    width: 96%;
-    padding: 2%
+    width: 92%;
+    padding: 4%
   }
   header {
     border-bottom: 1px solid #ececec;
+  }
+  header hgroup {
+    margin-bottom: 0;
   }
   header ul {
     margin: 0;
@@ -423,6 +445,9 @@ body.pages-about .testimonials footer .position {
     background: #f7f7f7;
     border-top: 1px solid #f4f4f4;
   }
+  body.projects-show figure img {
+    width: 96%;
+  }
   form input,
   form textarea {
     width: 80%;
@@ -431,4 +456,8 @@ body.pages-about .testimonials footer .position {
     margin-bottom: 14px;
   }
 }
-
+@media screen and (max-width: 600px) {
+  body.projects-index article {
+    width: 35%;
+  }
+}

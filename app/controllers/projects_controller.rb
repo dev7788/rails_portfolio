@@ -49,9 +49,8 @@ class ProjectsController < ApplicationController
 
   private
 
-  # Note: This is good practice if we have only one instance variable.
   def get_project
     @project = Project.find(params[:id])
   end
-  
+
 end

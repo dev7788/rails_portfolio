@@ -3,7 +3,7 @@ class Notification < ActionMailer::Base
 
   def contact_me(contact)
     @contact = contact
-    mail(:to => "rebagliatte@gmail.com", :subject => "Contact from your portfolio site!")
+    mail(:to => "rebagliatte@gmail.com", :subject => "Contact from rebagliatte.com")
   end
 
 end

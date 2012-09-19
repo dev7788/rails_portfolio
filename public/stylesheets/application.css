@@ -407,10 +407,12 @@ body.pages-about .testimonials footer .position {
 
 /* Media Queries *************************************************************************************************************************/
 
-@media screen and (min-width: 2000px) {
-  section.main,
-  footer.main {
-    background: none;
+@media screen and (min-width: 1300px) {
+  header {
+    max-width: 500px;
+  }
+  body.projects-index article {
+    max-width: 170px;
   }
 }
 @media screen and (max-width: 1175px) {

@@ -23,17 +23,5 @@ PortfolioWebsite::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
-
-  # Uncomment these to test S3 from the development environment
-  # Settings needed for image upload with Heroku and AWS
-  config.paperclip_storage = {
-      :storage => :s3,
-      :bucket  => ENV['S3_BUCKET'],
-      :path => "app/public/system/:attachment/:id/:style/:filename",
-      :s3_credentials => {
-         :access_key_id     => ENV['S3_KEY'],
-         :secret_access_key => ENV['S3_SECRET']
-      }
-  }
 end
 

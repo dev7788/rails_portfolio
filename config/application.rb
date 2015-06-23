@@ -38,5 +38,17 @@ module PortfolioWebsite
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # Paperclip defaults
+    config.paperclip_defaults = {
+      :storage => :s3,
+      :url => ":s3_domain_url",
+      :path => "app/public/system/:attachment/:id/:style/:filename",
+      :s3_credentials => {
+        :bucket => ENV['S3_BUCKET'],
+        :access_key_id => ENV['S3_KEY'],
+        :secret_access_key => ENV['S3_SECRET']
+      }
+    }
   end
 end

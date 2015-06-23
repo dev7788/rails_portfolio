@@ -58,6 +58,8 @@ GEM
       activesupport (>= 2.3.2)
     pg (0.14.1)
     polyglot (0.3.1)
+    puma (2.11.3)
+      rack (>= 1.1, < 2.0)
     rack (1.2.2)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
@@ -112,6 +114,7 @@ DEPENDENCIES
   haml
   paperclip (~> 2.3)
   pg
+  puma
   rails (= 3.0.3)
   rspec
   rspec-rails

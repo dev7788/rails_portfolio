@@ -1,111 +1,54 @@
-- title "Get to know me!"
+- title "Get to know me"
 
-%figure
-  = image_tag('veronica_rebagliatte.png')
+%figure= image_tag('veronica_rebagliatte.png')
 
-%p= "Hi there! I am a full stack developer from Uruguay."
-%p= "I've been a proud contributor to over 40 projects and counting. I love to spread the word about Ruby welcoming others to this wonderful language."
-%p= "Currently I'm working with a group of really talented developers and designers. Together we have collaborated in two Chicago based Startups founded by #{link_to 'LightBank', 'http://lightbank.com/'}.".html_safe
-%p.last="Earlier this year we launched our blog, #{link_to 'CodePath', 'http://codepath.io/'}, to share some bits of our code and experiences with the community. Hope you enjoy it!".html_safe
-
-%section
-  %h1= "Recent Activities"
-  %ul.bullets
-    %li
-      = "November, 5th - Spread the word at a "
-      = link_to("free Ruby On Rails hands-on workshop", "http://taller.rubyconfuruguay.org/", :class => "external-link", :title => "Visit the workshop's site", :target => "_blank")
-    %li
-      = "November, 8th and 9th - Attended "
-      = link_to("RubyConf Argentina", "http://rubyconfargentina.org/en", :class => "external-link", :title => "Visit RubyConf Argentina's site", :target => "_blank")
-    %li
-      = "November, 11th and 12th - Spoke at "
-      = link_to("RubyConf Uruguay", "http://www.rubyconfuruguay.org/en", :class => "external-link", :title => "Visit RubyConf Uruguay's site", :target => "_blank")
-    %li
-      = "December, 3rd and 4th - Participated in "
-      = link_to("Desarrollando América Latina", "http://www.desarrollandoamerica.org/", :class => "external-link", :title => "Visit Desarrollando América Latina's site", :target => "_blank")
+%p
+  = "Hi there! I am a full stack developer from Uruguay, CTO and co-founder of "
+  = link_to('Architects.io.', 'http://architects.io/')
+%p
+  = "Feel free to send me a contact request on the networks below or "
+  = link_to('send me an email.', contact_path)
 
 %section
-  %h1= "Skills"
+  %h1= "Specialties"
   %ul.bullets
-    %li= "Front-end development"
-    %li= "User experience"
+    %li= "Project Management"
+    %li= "Ruby (RoR, Sinatra)"
+    %li= "Python (Django)"
+    %li= "JavaScript (jQuery, Backbone)"
+    %li= "SQL (MySQL, PostgreSQL)"
+    %li= "NoSQL (Redis)"
+    %li= "HTML5, CSS3"
+    %li= "Interaction Design"
     %li= "Usability"
     %li= "Information Architecture"
-    %li= "Interaction Design"
-    %li= "SEO"
 
 %section
-  %h1= "Weapons of choice"
-  %ul.bullets
-    %li
-      %strong= "Frameworks"
-      %ul
-        %li= "Ruby on Rails (Ruby)"
-        %li= "Django (Python)"
-        %li= "Drupal (PHP)"
-        %li= "jQuery (JavaScript)"
-    %li
-      %strong= "Version Control Systems"
-      %ul
-        %li= "SVN"
-        %li= "GIT"
-    %li
-      %strong= "Design, animation and 3D modeling software"
-      %ul
-        %li= "Adobe Illustrator"
-        %li= "Adobe Photoshop"
-        %li= "Adobe Flash"
-        %li= "Adobe InDesign"
-        %li= "Adobe After Effects"
-        %li= "Rhinoceros"
-    %li
-      %strong= "Wireframing software"
-      %ul
-        %li= "Axure RP Pro"
-        %li= "Balsamiq mockups"
-    %li
-      %strong= "Markup & Stylesheet languages and extensions"
-      %ul
-        %li= "HTML/XHTML + CSS"
-        %li= "HTML5 + CSS3"
-        %li= "Haml + Sass"
+  %h1= "Contact Information"
+  %dl
+    %dt= "Skype: "
+    %dd= link_to("veronica.rebagliatte", "skype:veronica.rebagliatte?call", :title => 'Call me!')
+    %dt= "Mail/IM: "
+    %dd= link_to("veronica@rebagliatte.com", "mailto:veronica@rebagliatte.com", :title => 'Send me an email')
+    %dt= "vCard: "
+    %dd= link_to("Download my vCard", "/docs/Veronica Rebagliatte.vcf", :title => 'Add me as a contact')
 
-%section.testimonials
-  %h1= "Testimonials"
-  %article
-    %h1.hidden= "Alex North endorsement"
-    %blockquote{:cite => "http://www.linkedin.com/in/rebagliatte"}
-      %p
-        %span= "&ldquo;".html_safe
-        ="Its been a pleasure working with Veronica. She is personable and hard-working, and has made a real impact on our product development, using her creative skills to help ensure our product is appealing in both a visual and functional way."
-        %span= "&rdquo;".html_safe
-    %footer
-      %p
-        = "Alex North, "
-        %span.position= "Product Manager at KantarMedia Audiences"
-  %article
-    %h1.hidden= "Gonzalo Saavedra endorsement"
-    %blockquote
-      %p
-        %span= "&ldquo;".html_safe
-        ="Veronica is an excelent professional with an incredible talent, versatility and learning abilities. A self-taught like few others. Methodical, creative and hard-worker, always helping the team members grow. Beyond the professional area, she's a sensitive human being, supportive and fun. It was a pleasure working with her."
-        %span= "&rdquo;".html_safe
-    %footer
-      %p
-        = "Gonzalo Saavedra, "
-        %span.position= "Senior Software Engineer at Citrusbyte"
-  %article
-    %h1.hidden= "Ivan Wolcan endorsement"
-    %blockquote
-      %p
-        %span= "&ldquo;".html_safe
-        ="Verónica es el tipo de personas que recomendaría si estas pensando armar un hot design team. Siempre dispuesta a colaborar, aportar nuevas ideas, aprender, enseñar, probar, seguir aportando y empezar de nuevo con otra idea."
-        %br
-        ="El profesionalismo de su trabajo, que aseguro que no es poco, queda opacado por su buena disposición y su energía inagotable."
-        %br
-        ="Siempre un gusto trabajar junto a ella."
-        %span= "&rdquo;".html_safe
-    %footer
-      %p
-        = "Ivan Wolcan, "
-        %span.position= "GUI Manager at Globant"
+%section.networks
+  %h1= "Networks"
+  %ul
+    %li.linkedin= link_to(content_tag(:span, 'LinkedIn'), "http://uy.linkedin.com/in/rebagliatte", :title => 'LinkedIn')
+    %li.github= link_to(content_tag(:span, 'Github'), "https://github.com/rebagliatte", :title => 'Github')
+    %li.facebook= link_to(content_tag(:span, 'Facebook'), "http://www.facebook.com/rebagliatte", :title => 'Facebook')
+    %li.twitter= link_to(content_tag(:span, 'Twitter'), "http://www.twitter.com/rebagliatte", :title => 'Twitter')
+
+    %li.hidden.delicious= link_to(content_tag(:span, 'Delicious'), "http://www.delicious.com/rebagliatte", :title => 'Delicious')
+    %li.hidden.behance= link_to(content_tag(:span, 'Behance'), "http://www.behance.net/rebagliatte", :title => 'Behance')
+    %li.hidden.google= link_to(content_tag(:span, 'Google+'), "https://plus.google.com/102594733146864468374/posts", :title => 'Google+')
+    %li.hidden.flickr= link_to(content_tag(:span, 'Flickr'), "http://www.flickr.com/photos/rebagliatte/", :title => 'Flickr')
+    %li.hidden= link_to(content_tag(:span, 'Zerply'), "http://www.zerply.com/profile/rebagliatte", :title => 'Zerply')
+    %li.hidden= link_to(content_tag(:span, 'Dribble'), "http://dribbble.com/rebagliatte", :title => 'Dribble')
+    %li.hidden= link_to(content_tag(:span, 'Chamber'), "http://chamber.com/vernica-rebagliatte", :title => 'Chamber`')
+    %li.hidden= link_to(content_tag(:span, 'YouTube'), "http://www.youtube.com/vrebagliatte", :title => 'YouTube')
+    %li.hidden= link_to(content_tag(:span, 'Scribd'), "http://www.scribd.com/rebagliatte", :title => 'Scribd')
+    %li.hidden= link_to(content_tag(:span, 'Cpluv'), "http://www.computerlove.net/profile/users/rebagliatte", :title => 'Cpluv')
+    %li.hidden= link_to(content_tag(:span, 'LastFM'), "http://www.lastfm.es/user/rebagliatte", :title => 'LastFM')

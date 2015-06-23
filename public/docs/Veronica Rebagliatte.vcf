@@ -1,12 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Rebagliatte;Veronica;;;
-FN:Veronica Rebagliatte
+N:Rebagliatte;Vero;;;
+FN:Vero Rebagliatte
 ORG:veronica@rebagliatte.com;
-TITLE:UI Designer and Developer
-EMAIL;type=INTERNET;type=WORK;type=pref:veronica@rebagliatte.com
-TEL;type=CELL;type=pref:(+598 2) 099 360 243
-item1.ADR;type=HOME;type=pref:;;Churrinches m.123 s.2;Ciudad de la Costa;Montevideo;15005;Uruguay
+TITLE: Full Stack Developer
+TEL;type=CELL;type=pref:(+598) 9936 0243
 item1.X-ABADR:us
 item2.URL;type=pref:http://www.rebagliatte.com
 item2.X-ABLabel:_$!<HomePage>!$_
@@ -16,6 +14,7 @@ item4.URL:https://github.com/rebagliatte
 item4.X-ABLabel:github
 item5.URL:https://twitter.com/#!/rebagliatte
 item5.X-ABLabel:twitter
+EMAIL;type=INTERNET;type=WORK;type=pref:veronica@rebagliatte.com
 IMPP;X-SERVICE-TYPE=skype;type=WORK;type=pref:skype:veronica.rebagliatte
 IMPP;X-SERVICE-TYPE=googletalk;type=WORK:xmpp:rebagliatte
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAAAQABAAD/4QBARXhpZgAATU0AKgAA
